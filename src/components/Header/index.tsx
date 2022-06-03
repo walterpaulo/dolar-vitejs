@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from './style';
 
 function Header() {
     return (
-        <div>
+        <Container>
             Dolar hoje
-        </div>
+        </Container>
     );
 }
 
