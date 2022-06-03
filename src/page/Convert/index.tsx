@@ -1,4 +1,5 @@
 import React from 'react';
+import Text4 from '../../components/Text4';
 import { BoxConvert, Container, ItemReal, Operador } from './style';
 
 function Convert() {
@@ -7,17 +8,19 @@ function Convert() {
                 Converter
             <BoxConvert>
                 <ItemReal>
-                    <h4>Insira valor em real</h4>
+                <Text4>Insira valor em real</Text4>
                     <input type="text"/>
                 </ItemReal>
                 <Operador>x</Operador>
                 <ItemReal>
-                    <h4>Valor atual do dolar</h4>
+                    <Text4>
+                         Valor atual do dolar
+                    </Text4>
                     <div>4,75</div>
                 </ItemReal>
                 <Operador>=</Operador>
                 <ItemReal>
-                    <h4>Resultado</h4>
+                <Text4>Resultado</Text4>
                     <div>47,50</div>
                 </ItemReal>
             </BoxConvert>
