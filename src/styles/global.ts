@@ -18,5 +18,6 @@ export default createGlobalStyle`
         --container-bg-primary: #1C1C1C;
         --color-white: #2D2D2D;
         --color-white-clear: #D2D2D2;
+        --color-red: #fc0707;
     }
 `

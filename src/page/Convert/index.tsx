@@ -8,10 +8,10 @@ function Convert() {
                 Converter
             <BoxConvert>
                 <ItemReal>
-                <Text4>Insira valor em real</Text4>
-                <BoxInput><input type="number" /></BoxInput>
-                <ErrorNumber>* Informe números!</ErrorNumber>
-                </ItemReal>
+                    <Text4>Insira valor em real</Text4>
+                    <BoxInput><input type="number" /></BoxInput>
+                    <ErrorNumber>* Informe números!</ErrorNumber>
+                    </ItemReal>
                 <Operador>x</Operador>
                 <ItemReal>
                     <Text4>
@@ -21,8 +21,8 @@ function Convert() {
                 </ItemReal>
                 <Operador>=</Operador>
                 <ItemReal>
-                <Text4>Resultado</Text4>
-                <TextBoxtResult>47,50</TextBoxtResult>
+                    <Text4>Resultado</Text4>
+                    <TextBoxtResult>47,50</TextBoxtResult>
                 </ItemReal>
             </BoxConvert>
         </Container>
