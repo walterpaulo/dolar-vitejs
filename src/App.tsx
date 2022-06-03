@@ -1,9 +1,10 @@
 import React from 'react';
+import Convert from './page/Convert';
 
 function App() {
   return (
     <div>
-      oi
+      <Convert />
     </div>
   );
 }
