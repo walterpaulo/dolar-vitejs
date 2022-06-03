@@ -13,9 +13,10 @@ export default createGlobalStyle`
 
     }
     :root{
-        --main-bg-color: #141414;
+        --main-bg-color: #0C0C0C;
         --font-bg-color: #ffff;
         --container-bg-primary: #1C1C1C;
+        --container-bg-secundary: #141414;
         --color-white: #2D2D2D;
         --color-white-clear: #D2D2D2;
         --color-red: #fc0707;

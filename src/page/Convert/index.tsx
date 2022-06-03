@@ -1,11 +1,11 @@
 import React from 'react';
 import Text4 from '../../components/Text4';
-import { BoxConvert, BoxInput, Container, ErrorNumber, ItemReal, Operador, TextBoxtResult } from './style';
+import { AbaBox, BoxConvert, BoxInput, Container, ErrorNumber, ItemReal, Operador, TextBoxtResult } from './style';
 
 function Convert() {
     return (
         <Container>
-                Converter
+                <AbaBox>Converter</AbaBox>
             <BoxConvert>
                 <ItemReal>
                     <Text4>Insira valor em real</Text4>

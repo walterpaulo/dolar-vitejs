@@ -4,19 +4,26 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #141414;
+    background-color: var(--container-bg-secundary);
     max-width: 800px;
+`
+
+export const AbaBox = styled.div`
+    background-color: var(--container-bg-primary);
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 10px 0px 0px;
 `
 
 export const BoxConvert = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-    border: 1px solid var(--color-white-clear);
+    /* border: 1px solid var(--color-white-clear); */
     background-color: var(--container-bg-primary);
     padding: 15px 30px;
     gap: 40px;
-    margin-top: 10px;
     padding-bottom: 20px;
 `
 export const ItemReal  = styled.div`
