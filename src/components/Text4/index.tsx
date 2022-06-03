@@ -1,9 +1,6 @@
 import React from 'react';
+import { ITextProps } from '../../types/ITextProps';
 import { Container } from './style';
-
-export interface ITextProps{
-    children: string;
-}
 
 function Text4(prop: ITextProps) {
     return (
