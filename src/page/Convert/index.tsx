@@ -1,6 +1,6 @@
 import React from 'react';
 import Text4 from '../../components/Text4';
-import { BoxConvert, Container, ItemReal, Operador } from './style';
+import { BoxConvert, BoxInput, Container, ErrorNumber, ItemReal, Operador, TextBoxtResult } from './style';
 
 function Convert() {
     return (
@@ -9,19 +9,20 @@ function Convert() {
             <BoxConvert>
                 <ItemReal>
                 <Text4>Insira valor em real</Text4>
-                    <input type="text"/>
+                <BoxInput><input type="number" /></BoxInput>
+                <ErrorNumber>* Informe números!</ErrorNumber>
                 </ItemReal>
                 <Operador>x</Operador>
                 <ItemReal>
                     <Text4>
                          Valor atual do dolar
                     </Text4>
-                    <div>4,75</div>
+                    <TextBoxtResult>4,75</TextBoxtResult>
                 </ItemReal>
                 <Operador>=</Operador>
                 <ItemReal>
                 <Text4>Resultado</Text4>
-                    <div>47,50</div>
+                <TextBoxtResult>47,50</TextBoxtResult>
                 </ItemReal>
             </BoxConvert>
         </Container>

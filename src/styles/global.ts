@@ -16,6 +16,7 @@ export default createGlobalStyle`
         --main-bg-color: #141414;
         --font-bg-color: #ffff;
         --container-bg-primary: #1C1C1C;
+        --color-white: #2D2D2D;
         --color-white-clear: #D2D2D2;
     }
 `
