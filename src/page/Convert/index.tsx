@@ -27,10 +27,9 @@ function Convert() {
 
     function handleOnChange(e: any){
         let valorInput = e.target.value
-        e.target.value.length == 0? setResult(0) :
         isNumber(valorInput)?
             setValor((valorInput))
-            : console.log('não núemro')
+            : setResult(0)
         
       }
 
@@ -58,7 +57,7 @@ function Convert() {
                 <Operador>=</Operador>
                 <ItemReal>
                     <Text4>Resultado</Text4>
-                    <TextBoxtResult>R$ {result}</TextBoxtResult>
+                    <TextBoxtResult>R$ {result.toPrecision(3)}</TextBoxtResult>
                 </ItemReal>
             </BoxConvert>
         </Container>
