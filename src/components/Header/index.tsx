@@ -4,7 +4,8 @@ import { Container } from './style';
 function Header() {
     return (
         <Container>
-            Dolar hoje
+            <h3>Dólar hoje</h3>
+            <img src='icon-dolarcofre.png' />
         </Container>
     );
 }
