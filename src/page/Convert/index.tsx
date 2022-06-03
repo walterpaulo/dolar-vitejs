@@ -7,8 +7,8 @@ import { api, IDolar } from '../../services/dolorapi';
 function Convert() {
 
     const [dolar, setDolar] = useState<IDolar>()
-    const [result, setResult] = useState(0)
-    const [valor, setValor] = useState();
+    const [result, setResult] = useState<number>(0)
+    const [valor, setValor] = useState<number>(0);
 
     useEffect(()=>{
         async function getRepos() {
@@ -20,12 +20,23 @@ function Convert() {
                 console.error(error);
             }
         }
+            setResult(parseFloat(dolar?.low || "0")* valor)
           getRepos()
           
     },[dolar, valor, handleOnChange])
 
-    function handleOnChange(e: any){    
-      } 
+    function handleOnChange(e: any){
+        let valorInput = e.target.value
+        e.target.value.length == 0? setResult(0) :
+        isNumber(valorInput)?
+            setValor((valorInput))
+            : console.log('não núemro')
+        
+      }
+
+      function isNumber(n: string) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
       console.log(valor)
 
     return (
@@ -34,7 +45,7 @@ function Convert() {
             <BoxConvert>
                 <ItemReal>
                     <Text4>Insira valor em real</Text4>
-                    <BoxInput><input type="number" id='id' value={valor} onInput={e => setValor(e.target.value)}/></BoxInput>
+                    <BoxInput><input type="text" onChange={handleOnChange}/></BoxInput>
                     <ErrorNumber>* Informe números!</ErrorNumber>
                     </ItemReal>
                 <Operador>x</Operador>
