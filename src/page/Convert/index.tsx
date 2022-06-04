@@ -26,7 +26,9 @@ function Convert() {
     },[dolar, valor, handleOnChange])
 
     function handleOnChange(e: any){
+
         let valorInput = e.target.value
+        console.log()
         !isNumber(valorInput)?
         setValor(0)
             : setValor(valorInput)
@@ -42,7 +44,7 @@ function Convert() {
             <BoxConvert>
                 <ItemReal>
                     <Text4>Insira valor em real</Text4>
-                    <BoxInput><input type="text" onChange={handleOnChange}/></BoxInput>
+                    <BoxInput><input type="text" min={1} max={4} onChange={handleOnChange}/></BoxInput>
                     <ErrorNumber>* Informe números!</ErrorNumber>
                     </ItemReal>
                 <Operador>x</Operador>
@@ -55,7 +57,7 @@ function Convert() {
                 <Operador>=</Operador>
                 <ItemReal>
                     <Text4>Resultado</Text4>
-                    <TextBoxtResult>R$ {result.toPrecision(3)}</TextBoxtResult>
+                    <TextBoxtResult>R$ {result.toFixed(2)}</TextBoxtResult>
                 </ItemReal>
             </BoxConvert>
         </Container>
