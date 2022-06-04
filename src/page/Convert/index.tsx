@@ -9,9 +9,6 @@ function Convert() {
     const [dolar, setDolar] = useState<IDolar>()
     const [result, setResult] = useState<number>(0)
     const [valor, setValor] = useState<number>(0);
-    const [isErrorMessage, setErrorMessage] = useState(false)
-
-    const setMessagemError = () => setErrorMessage(!isErrorMessage)
 
     useEffect(()=>{
         async function getRepos() {
@@ -31,7 +28,7 @@ function Convert() {
     function handleOnChange(e: any){
         let valorInput = e.target.value
         !isNumber(valorInput)?
-            setValor(0)
+        setValor(0)
             : setValor(valorInput)
         
       }
@@ -39,7 +36,6 @@ function Convert() {
       function isNumber(n: string) {
         return !isNaN(parseFloat(n)) && isFinite(n);
     }
-    console.log(isErrorMessage)
     return (
         <Container>
                 <AbaBox>Converter</AbaBox>
