@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+type TDisplay = {
+    isError: boolean
+}
 
 export const Container = styled.div`
     display: flex;
@@ -62,8 +65,8 @@ export const BoxInput = styled.div`
         margin-bottom: 5px;
     }
 `
-export const ErrorNumber = styled.div`
-    /* display: none; */
+export const ErrorNumber = styled.div<TDisplay>`
+    display: ${props => props.isError ? "flex" : "none"};
     font-size: 12px;
     color: var(--color-red);
 

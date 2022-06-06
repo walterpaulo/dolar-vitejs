@@ -8,7 +8,8 @@ function Convert() {
 
     const [dolar, setDolar] = useState<IDolar>()
     const [result, setResult] = useState<number>(0)
-    const [valor, setValor] = useState<number>(0);
+    const [valor, setValor] = useState<number>(0)
+    const [isError, setIsErro ] = useState(false)
 
     useEffect(()=>{
         async function getRepos() {
@@ -23,18 +24,23 @@ function Convert() {
             setResult(parseFloat(dolar?.low || "0")* valor)
           getRepos()
           
-    },[dolar, valor, handleOnChange])
+    },[dolar, valor, handleOnChange, isError])
 
     function handleOnChange(e: any){
         let valorInput = e.target.value
-        !isNumber(valorInput)?
-        setValor(0)
-            : valorInput > 0 ? setValor(valorInput): setValor(0)
+        if (!isNumber(valorInput) || valorInput < 0 ) {
+            setValor(0)
+            setIsErro(true)
+        } else {
+            setValor(valorInput)
+            setIsErro(false)
+        }
       }
 
       function isNumber(n: string) {
         return !isNaN(parseFloat(n)) && isFinite(n);
     }
+    console.log(isError)
     return (
         <Container>
                 <AbaBox>Converter</AbaBox>
@@ -42,7 +48,7 @@ function Convert() {
                 <ItemReal>
                     <Text4>Insira valor em real</Text4>
                     <BoxInput><input type="text" min={1} max={4} onChange={handleOnChange}/></BoxInput>
-                    <ErrorNumber>* Informe números!</ErrorNumber>
+                    <ErrorNumber isError={isError}>* Informe números!</ErrorNumber>
                     </ItemReal>
                 <Operador>x</Operador>
                 <ItemReal>
