@@ -26,13 +26,10 @@ function Convert() {
     },[dolar, valor, handleOnChange])
 
     function handleOnChange(e: any){
-
         let valorInput = e.target.value
-        console.log()
         !isNumber(valorInput)?
         setValor(0)
-            : setValor(valorInput)
-        
+            : valorInput > 0 ? setValor(valorInput): setValor(0)
       }
 
       function isNumber(n: string) {
