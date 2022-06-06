@@ -32,7 +32,7 @@ export const BoxConvert = styled.div`
 export const ItemReal  = styled.div`
     display: block;
     background-color: var(--container-bg-primary);
-    height: 95px;
+    min-height: 95px;
     & h4 {
         margin-bottom: 10px;
         background-color: var(--container-bg-primary);
@@ -45,10 +45,17 @@ export const Operador = styled.div`
 `
 
 export const TextBoxtResult = styled.div`
-    width: 80px;
-    padding: 10px 20px;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 10px;
     background-color: var(--color-white);
     text-align: center;
+    font-size: 15px;
+
+    :hover{
+        overflow: visible;
+    }
 
 `
 
