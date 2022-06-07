@@ -29,7 +29,7 @@ function Convert() {
 
     function handleOnChange(e: any){
         let valorInput = e.target.value
-        if (!isNumber(valorInput) || valorInput < 0 ) {
+        if (!isNumber(valorInput) || valorInput < 0 || isNaN(valorInput) ) {
             setValor(0)
             setIsErro(true)
         } else {
