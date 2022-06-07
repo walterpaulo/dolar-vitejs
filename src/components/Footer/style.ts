@@ -9,4 +9,10 @@ export const Container = styled.div`
 
 export const Span = styled.span`
     margin-top: 10px;
+    text-align: center;
+
+    @media (max-width: 454px) {
+        font-size: 10px;
+        padding: 15px 15px;
+    }
 `
