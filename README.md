@@ -6,8 +6,9 @@
 
 
 
-  <img src="./public/dolar-hoje-walterpaulo.jpg" targer="_blank" alt="Dolar hoje" width="320" height="auto"/> 
+  <img src="./public/dolar-hoje-walterpaulo.jpg" targer="_blank" alt="Dolar hoje" height="auto"/> 
 
 ### Resultados
 
-![valor](./public/dolar-hoje-walter.gif)
+
+<img src="./public/dolar-hoje-walter.gif" targer="_blank" alt="Dolar hoje" height="auto"/> 
