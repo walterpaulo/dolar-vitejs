@@ -9,6 +9,11 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: var(--container-bg-secundary);
     max-width: 800px;
+    min-width: 200px;
+
+    @media (max-width: 454px) {
+        width: 100vw;
+    }
 `
 
 export const AbaBox = styled.div`
@@ -22,12 +27,27 @@ export const AbaBox = styled.div`
 export const BoxConvert = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     height: 100%;
     /* border: 1px solid var(--color-white-clear); */
     background-color: var(--container-bg-primary);
     padding: 15px 30px;
     gap: 40px;
     padding-bottom: 20px;
+
+    @media (max-width: 695px) {
+        justify-content: center;
+       
+    }
+    @media (max-width: 454px) {
+        flex-direction: column;
+        align-items:center;
+        width: 100vw;
+        min-width: 200px;
+        padding: 15px 0 0 0;
+        margin-right: 10px;
+        gap: 5px;
+    }
 `
 export const ItemReal  = styled.div`
     display: block;
@@ -42,6 +62,20 @@ export const Operador = styled.div`
     background-color: var(--container-bg-primary);
     font-size: 20px;
     font-weight: 700;
+    
+    @media (max-width: 695px) {
+        
+        &:is(.operResul){
+            display: none;
+            background-color: red;
+        }
+    }
+    @media (max-width: 454px) {
+        
+        &:is(.operMult){
+            display: none;
+        }
+    }
 `
 
 export const TextBoxtResult = styled.div`
@@ -62,7 +96,7 @@ export const TextBoxtResult = styled.div`
 export const BoxInput = styled.div`
     background-color: var(--container-bg-primary);
     input{
-        width: 80px;
+        width: 110px;
         padding: 10px 20px;
         border: none;
         background-color: var(--color-white);
