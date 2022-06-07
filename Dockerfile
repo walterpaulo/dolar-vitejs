@@ -8,5 +8,5 @@ COPY . .
 RUN npm install
 RUN yarn build
 
-EXPOSE 3000
+# EXPOSE 3000
 CMD [ "yarn", "preview", "--host" ]
