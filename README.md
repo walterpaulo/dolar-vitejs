@@ -5,6 +5,9 @@
 * React c/ TypeScript;
 
 
-![valor](./public/dolar.gif)
 
-  <img src="./public/dolar.png" targer="_blank" alt="Dolar hoje" width="320" height="auto"/> 
+  <img src="./public/dolar-hoje-walterpaulo.jpg" targer="_blank" alt="Dolar hoje" width="320" height="auto"/> 
+
+### Resultados
+
+![valor](./public/dolar-hoje-walter.gif)
