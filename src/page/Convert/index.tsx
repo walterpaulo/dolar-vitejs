@@ -22,7 +22,7 @@ function Convert() {
             }
         }
         document.title = "Converter Dólar "
-            setResult(parseFloat(dolar?.low || "0")* valor)
+            setResult(parseFloat(dolar?.bid || "0")* valor)
           getRepos()
           
     },[dolar, valor, handleOnChange, isError])
@@ -55,7 +55,7 @@ function Convert() {
                     <Text4>
                          Valor atual do dolar
                     </Text4>
-                    <TextBoxtResult>US$ {dolar?.low.substr(0,4)}</TextBoxtResult>
+                    <TextBoxtResult>US$ {dolar?.bid.substr(0,4)}</TextBoxtResult>
                 </ItemReal>
                 <Operador className='operResul'>=</Operador>
                 <ItemReal>

@@ -5,6 +5,7 @@ export interface IDolar{
     codein: string;
     name: string;
     low: string;
+    bid: string;
 }
 
 
