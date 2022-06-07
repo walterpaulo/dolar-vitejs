@@ -39,7 +39,7 @@ function Convert() {
       }
 
       function isNumber(n: string) {
-        return !isNaN(parseFloat(n)) && isFinite(n);
+        return !isNaN(parseFloat(n)) && isFinite(parseFloat(n));
     }
     console.log(isError)
     return (
