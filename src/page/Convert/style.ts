@@ -67,7 +67,6 @@ export const Operador = styled.div`
         
         &:is(.operResul){
             display: none;
-            background-color: red;
         }
     }
     @media (max-width: 454px) {

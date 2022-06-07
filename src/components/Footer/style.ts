@@ -4,15 +4,19 @@ export const Container = styled.div`
     height: 50px;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 `;
 
 export const Span = styled.span`
     margin-top: 10px;
     text-align: center;
-
+    
+    
     @media (max-width: 454px) {
         font-size: 10px;
-        padding: 15px 15px;
+        padding-top: 15px;
+        &:is(.accessCod){
+            padding: 0 15px;
+        }
     }
 `
