@@ -21,6 +21,7 @@ function Convert() {
                 console.error(error);
             }
         }
+        document.title = "Converter Dólar "
             setResult(parseFloat(dolar?.low || "0")* valor)
           getRepos()
           
