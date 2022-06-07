@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  dolarhoje:
+    container_name: dolarhoje
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dolarhoje
+    ports: 
+      - "4002:4173"
