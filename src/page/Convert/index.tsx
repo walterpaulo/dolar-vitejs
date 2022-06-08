@@ -41,7 +41,6 @@ function Convert() {
       function isNumber(n: string) {
         return !isNaN(parseFloat(n)) && isFinite(parseFloat(n));
     }
-    console.log(isError)
     return (
         <Container>
                 <AbaBox>Converter</AbaBox>
